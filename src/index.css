@@ -1,13 +1,1155 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.cdnfonts.com/css/tuffy');
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    color: white;
+    background-color: #1B5743;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    gap: 2px;
+    justify-content: center;
+    gap: 10px
+}
+
+nav ul li {
+    list-style: none;
+    text-align: center;
+    height: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav .hambar {
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+}
+
+nav .hambar .line {
+    width: 80%;
+    height: 3px;
+    background-color: #F87B35;
+    transition: 0.5s ease-in-out;
+}
+
+nav .hambar .line:nth-child(1).active {
+    transform: translateY(13px) rotate(45deg);
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -moz-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+nav .hambar .line:nth-child(2).active {
+    background-color: transparent;
+}
+
+nav .hambar .line:nth-child(3).active {
+    transform: translateY(-13px) rotate(-45deg);
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -moz-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transition: 0.5s ease-in-out;
+}
+
+nav .logo {
+    width: 20%;
+    height: 70%;
+}
+
+nav .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* home page */
+
+.home-wrapper {
+    min-height: 100dvh;
+    width: 100%;
+}
+
+.home-wrapper .home-frist-container {
+    background-color: aliceblue;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.home-wrapper .home-frist-container .left-section {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-right: 10px solid coral;
+    height: 100%;
+}
+
+.home-wrapper .home-frist-container .left-section h3:nth-child(2) {
+    text-align: right;
+}
+
+.home-wrapper .home-frist-container .right-section {
+    width: 55%;
+    height: 80%;
+}
+
+.home-wrapper .home-frist-container .right-section img {
+    width: 100%;
+    height: 100%;
+    border: 10px solid coral;
+    border-left: 0px solid transparent;
+}
+
+.home-wrapper .home-second-container {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.home-wrapper .home-second-container .home-second-content {
+    background-color: antiquewhite;
+    width: 70%;
+    padding: 20px;
+    border: 2px solid black;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.home-wrapper .home-second-container .home-second-content h4 {
+    width: 47%;
+    font-family: "Lekton", monospace;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.home-wrapper .home-second-container .home-second-content p {
+    width: 60%;
+    font-family: 'Tuffy', sans-serif;
+    font-weight: lighter;
+}
+
+.home-wrapper .home-third-container {
+    background-color: #F87B35;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-wrapper .home-third-container p {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+    font-family: "Lekton", monospace;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+}
+
+.home-wrapper .home-fourth-container {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 10px;
+}
+
+.home-wrapper .home-fourth-container .home-fourth-content {
+    height: 70%;
+    width: 90%;
+}
+
+.home-wrapper .home-fourth-container .home-fourth-content h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.home-wrapper .home-fourth-container .home-fourth-content .home-fourth-bottom-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-wrapper .home-fourth-container .home-fourth-content .home-bottom-section {
+    width: 30%;
+    padding: 10px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.home-wrapper .home-fourth-container .home-fourth-content .home-bottom-section .home-bottom-foto {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-wrapper .home-fourth-container .home-fourth-content .home-bottom-section .home-bottom-foto img {
+    width: 90%;
+    height: 100%;
+}
+
+.home-wrapper .home-fourth-container .home-fourth-content .home-bottom-section .text-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 60%;
+}
+
+.home-wrapper .home-fourth-container .home-fourth-content .home-bottom-section .text-div h3 {
+    text-align: center;
+    font-family: "Lekton", monospace;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.home-wrapper .home-fourth-container .home-fourth-content .home-bottom-section .text-div p {
+    text-align: center;
+    font-family: "Lekton", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.home-wrapper .home-fifth-container {
+    width: 100%;
+    height: 80px;
+}
+
+.home-wrapper .home-sixth-container {
+    padding: 80px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-wrapper .home-sixth-container .sixth-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 50px
+}
+
+.home-wrapper .home-sixth-container .sixth-content .text-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-wrapper .home-sixth-container .sixth-content .text-container .text-content {
+    width: 44%;
+    padding: 5px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 150px;
+}
+
+.home-wrapper .home-sixth-container .sixth-content .text-container .text-content p:nth-child(1) {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+
+.home-wrapper .home-sixth-container .sixth-content .text-container .text-content .text-child {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home-wrapper .home-sixth-container .sixth-content button {
+    padding: 10px;
+    background-color: #F87B35;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    font-weight: 700;
+    width: 30%;
+    height: 50px;
+}
+
+
+/*  end of home-page*/
+
+
+/* om oss page */
+
+.omoss-wrapper {
+    width: 100%;
+    min-height: 100dvh;
+    padding-bottom: 10px;
+}
+
+.omoss-wrapper .line {
+    width: 100%;
+    height: 21px;
+    background-color: #F87B35;
+}
+
+.omoss-wrapper .omoss-frist-container {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.omoss-wrapper .omoss-frist-container .left-content {
+    width: 70%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+.omoss-wrapper .omoss-frist-container .left-content p:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
+.omoss-wrapper .omoss-frist-container .left-content p {
+    width: 70%;
+}
+
+.omoss-wrapper .omoss-frist-container .right-content {
+    background-color: #F87B35;
+    width: 30%;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.omoss-wrapper .omoss-frist-container .right-content .right-div {
+    font-family: lekton;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.omoss-wrapper .omoss-frist-container .right-content .right-div h3 {
+    background-color: aliceblue;
+    width: 85%;
+    border-top-left-radius: 5px;
+    text-align: center;
+    border-top-right-radius: 5px;
+}
+
+.omoss-wrapper .omoss-frist-container .right-content .right-div .foto {
+    width: 100%;
+    height: 250px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-color: transparent;
+}
+
+.omoss-wrapper .omoss-frist-container .right-content .right-div .foto img {
+    width: 80%;
+    height: 80%;
+}
+
+.omoss-wrapper .omoss-second-container {
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.omoss-wrapper .omoss-second-container .omoss-content {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+}
+
+.omoss-wrapper .omoss-second-container .omoss-content .bottom-section {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    min-height: 400px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div img {
+    width: 90%;
+    height: 120px;
+}
+
+.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div .text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 90%;
+    font-family: lekton;
+    gap: 10px;
+}
+
+.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div .text-div p,
+.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div .text-div h4 {
+    text-align: center;
+}
+
+.omoss-wrapper .omoss-third-container {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.omoss-wrapper .omoss-third-container .omoss-content {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.omoss-wrapper .omoss-third-container .omoss-content img {
+    height: 100%;
+    width: 100%;
+}
+
+.omoss-wrapper .omoss-third-container .omoss-content button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    padding: 15px;
+    font-family: lekton;
+    font-weight: 700;
+    background-color: gainsboro;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    width: 150px
+}
+
+
+/* end of om oss page */
+
+
+/* koamnal page */
+
+.koanmal-wrapper {
+    min-height: 100dvh;
+    width: 100%;
+}
+
+.koanmal-wrapper .koanmal-frist-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.koanmal-wrapper .koanmal-frist-container .frist-section {
+    width: 90%;
+    display: flex;
+    padding: 20px;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.koanmal-wrapper .koanmal-frist-container .frist-section h2 {
+    width: 35%;
+    font-size: 2rem;
+    line-height: 2;
+    font-family: inter;
+}
+
+.koanmal-wrapper .koanmal-frist-container .frist-section p {
+    width: 55%;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: inter;
+}
+
+.koanmal-wrapper .koanmal-second-container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.koanmal-wrapper .koanmal-second-container img {
+    width: 100%;
+    height: 350px;
+}
+
+.koanmal-wrapper .koanmal-third-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.koanmal-wrapper .koanmal-third-container .frist-content {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+    gap: 30px
+}
+
+.koanmal-wrapper .koanmal-third-container .frist-content .left-content {
+    width: 50%;
+}
+
+.koanmal-wrapper .koanmal-third-container .frist-content .left-content h2 {
+    width: 50%;
+    font-family: lekton;
+    font-weight: 700;
+}
+
+.koanmal-wrapper .koanmal-third-container .frist-content .left-content p {
+    width: 70%;
+    font-family: lekton;
+    font-weight: 400;
+}
+
+.koanmal-wrapper .koanmal-third-container .frist-content .right-content {
+    width: 50%;
+    min-height: 400px;
+}
+
+.koanmal-wrapper .koanmal-third-container .frist-content .right-content button {
+    background-color: #F87B35;
+    width: 40%;
+    padding: 15px 5px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-weight: 700;
+    font-family: lekton;
+}
+
+.koanmal-wrapper .koanmal-fourth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.koanmal-wrapper .koanmal-fourth-container .frist-content {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+}
+
+.koanmal-wrapper .koanmal-fourth-container .frist-content .foto {
+    width: 50%;
+}
+
+.koanmal-wrapper .koanmal-fourth-container .frist-content .foto img {
+    width: 100%;
+    height: 350px;
+}
+
+.koanmal-wrapper .koanmal-fourth-container .frist-content .text {
+    width: 40%;
+    color: aliceblue;
+    background-color: #1B5743;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+}
+
+.koanmal-wrapper .koanmal-fourth-container .frist-content .text h2 {
+    font-family: lekton;
+    font-weight: bolder;
+    width: 70%;
+}
+
+.koanmal-wrapper .koanmal-fourth-container .frist-content .text p {
+    font-family: lekton;
+    font-weight: 400;
+    width: 70%;
+}
+
+.koanmal-wrapper .koanmal-fifth-container {
+    padding: 80px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.koanmal-wrapper .koanmal-fifth-container .frist-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 50px
+}
+
+.koanmal-wrapper .koanmal-fifth-container .frist-content .text-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.koanmal-wrapper .koanmal-fifth-container .frist-content .text-container .text-content {
+    width: 44%;
+    padding: 5px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 150px;
+}
+
+.koanmal-wrapper .koanmal-fifth-container .frist-content .text-container .text-content p:nth-child(1) {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+
+.koanmal-wrapper .koanmal-fifth-container .text-container .text-content .text-child {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.koanmal-wrapper .koanmal-fifth-container .frist-content button {
+    padding: 10px;
+    background-color: #F87B35;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    font-weight: 700;
+    width: 30%;
+    height: 50px;
+}
+
+
+/*  end of koanmal */
+
+
+/* jobba med oss */
+
+
+/* end of jobba med oss */
+
+.jobbmedoss-wrapper {
+    width: 100%;
+    min-height: 100dvh;
+}
+
+.jobbmedoss-wrapper .jombbmedoss-frist-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 20px 0px;
+    flex-direction: column;
+    gap: 70px
+}
+
+.jobbmedoss-wrapper .jombbmedoss-frist-container .frist-content {
+    width: 85%;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.jobbmedoss-wrapper .jombbmedoss-frist-container .frist-content h1 {
+    font-family: lekton;
+}
+
+.jobbmedoss-wrapper .jombbmedoss-frist-container .frist-content h4 {
+    font-family: lekton;
+}
+
+.jobbmedoss-wrapper .jombbmedoss-frist-container .frist-content p {
+    font-family: lekton;
+    width: 50%;
+}
+
+.jobbmedoss-wrapper .jombbmedoss-frist-container h6 {
+    width: 85%;
+    font-family: lekton;
+    font-size: 1.3rem;
+}
+
+.jobbmedoss-wrapper .jombbmedoss-frist-container p a {
+    text-decoration: none;
+    color: #F87B35;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.jobbmedoss-wrapper .line {
+    background-color: #1B5743;
+    width: 100%;
+    height: 20px;
+}
+
+.jobbmedoss-wrapper .jombbmedoss-second-container {
+    background-color: aliceblue;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.jobbmedoss-wrapper .jombbmedoss-second-container .frist-content {
+    background-color: #3C4870;
+    padding: 15px;
+    color: aliceblue;
+    font-family: lekton;
+    width: 95%;
+    height: 100px;
+}
+
+
+/* end of jobba med oss page */
+
+
+/* footer */
+
+.footer-nav {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-around;
+    color: white;
+    background-color: #1B5743;
+}
+
+.footer-nav .footer-left-content {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-nav .footer-left-content .logo {
+    width: 100%;
+    height: 50%;
+}
+
+.footer-nav .footer-left-content .kontakt-footer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.footer-nav .footer-left-content .kontakt-footer a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.footer-nav .right-content {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav .right-content .frist-section,
+.footer-nav .right-content .second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+/*  
+    
+    @media(min-width:700px) and (max-width:1200px) {
+        .home-wrapper .home-fourth-container .home-fourth-content .home-bottom-section {
+            height: 700px;
+        }
+        .home-wrapper .home-fourth-container .home-fourth-content .home-bottom-section .text-div {
+            background-color: rgb(225, 255, 0);
+            height: 70%;
+        }
+        .home-wrapper .home-fourth-container .home-fourth-content .home-bottom-section .home-bottom-foto {
+            height: 30%;
+        }
+    }
+    */
+
+@media(max-width:790px) {
+    .nav {
+        position: relative;
+    }
+    nav ul {
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        width: 100%;
+        height: 100dvh;
+        background-color: rgb(239, 132, 1);
+        flex-direction: column;
+        justify-content: flex-start;
+        visibility: hidden;
+        transition: visibility 0.5s ease-in-out;
+        -webkit-transition: visibility 0.5s ease-in-out;
+        -moz-transition: visibility 0.5s ease-in-out;
+        -ms-transition: visibility 0.5s ease-in-out;
+        -o-transition: visibility 0.5s ease-in-out;
+    }
+    nav ul.active {
+        visibility: visible;
+        transition: visibility 0.5s ease-in-out;
+        -webkit-transition: visibility 0.5s ease-in-out;
+        -moz-transition: visibility 0.5s ease-in-out;
+        -ms-transition: visibility 0.5s ease-in-out;
+        -o-transition: visibility 0.5s ease-in-out;
+        z-index: 10;
+    }
+    nav ul li {
+        width: 100%;
+        height: 10%;
+    }
+    nav ul li a {
+        width: 100%;
+        height: 100%;
+    }
+    nav .hambar {
+        display: flex;
+    }
+    nav .logo {
+        width: 45%;
+    }
+    /* home-page */
+    .home-wrapper .home-frist-container .left-section {
+        font-size: 0.9rem;
+        width: 50%;
+    }
+    .home-wrapper .home-frist-container .right-section {
+        width: 50%;
+        height: 50%;
+    }
+    .home-wrapper .home-second-container .home-second-content h4 {
+        width: 90%;
+    }
+    .home-wrapper .home-second-container .home-second-content p {
+        width: 90%;
+    }
+    .home-wrapper .home-fourth-container .home-fourth-content .home-bottom-section {
+        width: 80%;
+        height: auto;
+    }
+    .home-wrapper .home-sixth-container .sixth-content .text-container {
+        justify-content: center;
+    }
+    .home-wrapper .home-sixth-container .sixth-content .text-container .text-content {
+        width: 80%;
+        height: auto;
+    }
+    .home-wrapper .home-sixth-container .sixth-content button {
+        width: 60%;
+    }
+    .home-wrapper .home-sixth-container .sixth-content .text-container .text-content p:nth-child(1) {
+        height: auto;
+    }
+    .home-wrapper .home-sixth-container .sixth-content h1 {
+        text-align: center;
+    }
+    /* end of home page */
+    /* om oss page */
+    .omoss-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .omoss-wrapper .omoss-frist-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F87B35;
+        width: 85%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 100px 0px;
+        margin-bottom: 100px;
+    }
+    .omoss-wrapper .omoss-frist-container .left-content {
+        width: 90%;
+        align-items: center;
+        gap: 10px;
+    }
+    .omoss-wrapper .omoss-frist-container .left-content h2:nth-of-type(2) {
+        margin-top: 20px;
+    }
+    .omoss-wrapper .omoss-frist-container .right-content {
+        width: 90%;
+    }
+    .omoss-wrapper .omoss-frist-container .left-content h2 {
+        width: 90%;
+        text-align: center;
+        color: aliceblue;
+        font-size: 1rem;
+        font-family: lekton;
+        font-weight: bolder;
+    }
+    .omoss-wrapper .omoss-frist-container .left-content p {
+        width: 90%;
+        text-align: center;
+        color: aliceblue
+    }
+    .omoss-wrapper .omoss-frist-container .right-content .right-div h3 {
+        background-color: transparent;
+        margin-bottom: 10px;
+    }
+    .omoss-wrapper .omoss-second-container {
+        flex-direction: column;
+    }
+    .omoss-wrapper .omoss-second-container .omoss-content {
+        gap: 40px;
+    }
+    .omoss-wrapper .omoss-second-container .omoss-content .bottom-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div {
+        width: 80%
+    }
+    .omoss-wrapper .line {
+        display: none;
+    }
+    .omoss-wrapper .omoss-frist-container .right-content .right-div .foto img {
+        width: 90%;
+        height: 90%;
+    }
+    /* end of om oss */
+    /* koanmal page */
+    .koanmal-wrapper .koanmal-frist-container {
+        width: 100%;
+        padding: 15px;
+    }
+    .koanmal-wrapper .koanmal-frist-container .frist-section {
+        width: 100%;
+        padding: 0px;
+        gap: 15px;
+        justify-content: space-between;
+    }
+    .koanmal-wrapper .koanmal-frist-container .frist-section h2 {
+        font-size: 1.1rem;
+        font-family: lekton;
+        line-height: 3;
+        width: 30%;
+    }
+    .koanmal-wrapper .koanmal-frist-container .frist-section p {
+        font-size: 0.8rem;
+        width: 55%;
+    }
+    .koanmal-wrapper .koanmal-second-container {
+        height: 350px;
+    }
+    .koanmal-wrapper .koanmal-second-container img {
+        height: 200px;
+    }
+    .koanmal-wrapper .koanmal-third-container .frist-content {
+        flex-direction: column;
+    }
+    .koanmal-wrapper .koanmal-third-container .frist-content .left-content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .koanmal-wrapper .koanmal-third-container .frist-content .left-content h2 {
+        width: 90%;
+    }
+    .koanmal-wrapper .koanmal-third-container .frist-content .left-content p {
+        width: 90%;
+    }
+    .koanmal-wrapper .koanmal-third-container .frist-content .right-content {
+        min-height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .koanmal-wrapper .koanmal-third-container .frist-content .right-content button {
+        width: 60%
+    }
+    .koanmal-wrapper .koanmal-fourth-container .frist-content {
+        background-color: #1B5743;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+    .koanmal-wrapper .koanmal-fourth-container .frist-content .foto {
+        width: 100%;
+    }
+    .koanmal-wrapper .koanmal-fourth-container .frist-content .text {
+        width: 100%;
+    }
+    .koanmal-wrapper .koanmal-fifth-container .frist-content .text-container {
+        justify-content: center;
+    }
+    .koanmal-wrapper .koanmal-fifth-container .frist-content .text-container .text-content {
+        width: 80%;
+        height: auto;
+    }
+    .koanmal-wrapper .koanmal-fifth-container .frist-content button {
+        width: 60%;
+    }
+    .koanmal-wrapper .koanmal-fifth-container .frist-content h1 {
+        text-align: center;
+    }
+    .koanmal-wrapper .koanmal-fifth-container .frist-content .text-container .text-content p:nth-child(1) {
+        height: auto;
+    }
+    /* end of ko anmal page */
+    /* ledig jobb page */
+    .jobbmedoss-wrapper .jombbmedoss-frist-container .frist-content p {
+        font-family: lekton;
+        width: 80%;
+    }
+    /* end of ledig jobb page */
+    /* footer */
+    .footer-nav {
+        height: 400px;
+        gap: 10px;
+    }
+    .footer-nav .footer-left-content {
+        width: 40%
+    }
+    .footer-nav .footer-left-content p,
+    .footer-nav .footer-left-content .kontakt-footer a {
+        font-size: 0.6rem;
+    }
+    .footer-nav .right-content {
+        height: 70%;
+    }
+    .footer-nav .right-content h1 {
+        font-size: 0.9rem;
+    }
+    /* end of footer */
 }
