@@ -364,177 +364,65 @@ nav .logo img {
 /*  end of home-page*/
 
 
-/* om oss page */
+/* skolan page */
 
-.omoss-wrapper {
+.skolan-wrapper {
     width: 100%;
     min-height: 100dvh;
-    padding-bottom: 10px;
 }
 
-.omoss-wrapper .line {
+.skolan-wrapper .skolan-frist-container,
+.skolan-third-container {
+    background-color: #ffffff;
+    height: 150px;
     width: 100%;
-    height: 21px;
-    background-color: #F87B35;
-}
-
-.omoss-wrapper .omoss-frist-container {
     display: flex;
-    padding-bottom: 50px;
-}
-
-.omoss-wrapper .omoss-frist-container .left-content {
-    width: 70%;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-}
-
-.omoss-wrapper .omoss-frist-container .left-content p:nth-of-type(1) {
-    margin-bottom: 10px;
-}
-
-.omoss-wrapper .omoss-frist-container .left-content p {
-    width: 70%;
-}
-
-.omoss-wrapper .omoss-frist-container .right-content {
-    background-color: #F87B35;
-    width: 30%;
-    border-bottom-left-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 10px;
-}
-
-.omoss-wrapper .omoss-frist-container .right-content .right-div {
-    font-family: lekton;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-.omoss-wrapper .omoss-frist-container .right-content .right-div h3 {
-    background-color: aliceblue;
+.skolan-wrapper .skolan-third-container {
+    justify-content: flex-end;
+}
+
+.skolan-wrapper .skolan-frist-container .frist-content,
+.skolan-wrapper .skolan-third-container .frist-content {
+    background-color: #F87B35;
+    min-height: 70px;
     width: 85%;
-    border-top-left-radius: 5px;
-    text-align: center;
-    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: lekton;
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding: 5px;
 }
 
-.omoss-wrapper .omoss-frist-container .right-content .right-div .foto {
+.skolan-wrapper .skolan-frist-container .frist-content p,
+.skolan-wrapper .skolan-third-container .frist-content p {
+    width: 70%;
+    text-align: right;
+}
+
+.skolan-wrapper .skolan-third-container .frist-content p {
+    text-align: left;
+}
+
+.skolan-wrapper .skolan-second-container {
     width: 100%;
-    height: 250px;
-    background-color: aliceblue;
+    height: 650px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-top-color: transparent;
-}
-
-.omoss-wrapper .omoss-frist-container .right-content .right-div .foto img {
-    width: 80%;
-    height: 80%;
-}
-
-.omoss-wrapper .omoss-second-container {
-    padding: 40px 15px;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.omoss-wrapper .omoss-second-container .omoss-content {
+.skolan-wrapper .skolan-second-container img {
     width: 95%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px
-}
-
-.omoss-wrapper .omoss-second-container .omoss-content .bottom-section {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-}
-
-.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    min-height: 400px;
-    padding: 10px;
-    gap: 10px;
-}
-
-.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div img {
-    width: 90%;
-    height: 120px;
-}
-
-.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div .text-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    width: 90%;
-    font-family: lekton;
-    gap: 10px;
-}
-
-.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div .text-div p,
-.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div .text-div h4 {
-    text-align: center;
-}
-
-.omoss-wrapper .omoss-third-container {
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.omoss-wrapper .omoss-third-container .omoss-content {
-    position: relative;
-    width: 100%;
-    height: 300px;
-}
-
-.omoss-wrapper .omoss-third-container .omoss-content img {
     height: 100%;
-    width: 100%;
-}
-
-.omoss-wrapper .omoss-third-container .omoss-content button {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    padding: 15px;
-    font-family: lekton;
-    font-weight: 700;
-    background-color: gainsboro;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    width: 150px
 }
 
 
-/* end of om oss page */
+/* end of skolan page */
 
 
 /* koamnal page */
@@ -746,6 +634,72 @@ nav .logo img {
 /*  end of koanmal */
 
 
+/* bloggar-page */
+
+.bloggar-wrapper {
+    min-height: 100dvh;
+}
+
+.bloggar-wrapper .bloggar-frist-container,
+.bloggar-wrapper .bloggar-third-container {
+    background-color: #ffffff;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bloggar-wrapper .bloggar-frist-container .frist-content,
+.bloggar-wrapper .bloggar-third-container .frist-content {
+    background-color: #F87B35;
+    min-height: 70px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: lekton;
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding: 5px;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}
+
+.bloggar-wrapper .bloggar-second-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0px 100px 0px;
+}
+
+.bloggar-wrapper .bloggar-second-container .bloggar-sections {
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px
+}
+
+.bloggar-wrapper .bloggar-second-container .bloggar-sections h4 {
+    font-family: lekton;
+}
+
+.bloggar-wrapper .bloggar-second-container .bloggar-sections .foto-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloggar-wrapper .bloggar-second-container .bloggar-sections .foto-section img {
+    width: 17%;
+    height: 150px;
+}
+
+
+/* end of bloggar page */
+
+
 /* jobba med oss */
 
 
@@ -824,6 +778,179 @@ nav .logo img {
 
 
 /* end of jobba med oss page */
+
+
+/* om oss page */
+
+.omoss-wrapper {
+    width: 100%;
+    min-height: 100dvh;
+    padding-bottom: 10px;
+}
+
+.omoss-wrapper .line {
+    width: 100%;
+    height: 21px;
+    background-color: #F87B35;
+}
+
+.omoss-wrapper .omoss-frist-container {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.omoss-wrapper .omoss-frist-container .left-content {
+    width: 70%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+.omoss-wrapper .omoss-frist-container .left-content p:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
+.omoss-wrapper .omoss-frist-container .left-content p {
+    width: 70%;
+}
+
+.omoss-wrapper .omoss-frist-container .right-content {
+    background-color: #F87B35;
+    width: 30%;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.omoss-wrapper .omoss-frist-container .right-content .right-div {
+    font-family: lekton;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.omoss-wrapper .omoss-frist-container .right-content .right-div h3 {
+    background-color: aliceblue;
+    width: 85%;
+    border-top-left-radius: 5px;
+    text-align: center;
+    border-top-right-radius: 5px;
+}
+
+.omoss-wrapper .omoss-frist-container .right-content .right-div .foto {
+    width: 100%;
+    height: 250px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-color: transparent;
+}
+
+.omoss-wrapper .omoss-frist-container .right-content .right-div .foto img {
+    width: 80%;
+    height: 80%;
+}
+
+.omoss-wrapper .omoss-second-container {
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.omoss-wrapper .omoss-second-container .omoss-content {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+}
+
+.omoss-wrapper .omoss-second-container .omoss-content .bottom-section {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    min-height: 400px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div img {
+    width: 90%;
+    height: 120px;
+}
+
+.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div .text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 90%;
+    font-family: lekton;
+    gap: 10px;
+}
+
+.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div .text-div p,
+.omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div .text-div h4 {
+    text-align: center;
+}
+
+.omoss-wrapper .omoss-third-container {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.omoss-wrapper .omoss-third-container .omoss-content {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.omoss-wrapper .omoss-third-container .omoss-content img {
+    height: 100%;
+    width: 100%;
+}
+
+.omoss-wrapper .omoss-third-container .omoss-content button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    padding: 15px;
+    font-family: lekton;
+    font-weight: 700;
+    background-color: gainsboro;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    width: 150px
+}
+
+
+/* end of om oss page */
 
 
 /* footer */
@@ -977,73 +1104,13 @@ nav .logo img {
         text-align: center;
     }
     /* end of home page */
-    /* om oss page */
-    .omoss-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .omoss-wrapper .omoss-frist-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #F87B35;
-        width: 85%;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        padding: 100px 0px;
-        margin-bottom: 100px;
-    }
-    .omoss-wrapper .omoss-frist-container .left-content {
-        width: 90%;
-        align-items: center;
-        gap: 10px;
-    }
-    .omoss-wrapper .omoss-frist-container .left-content h2:nth-of-type(2) {
-        margin-top: 20px;
-    }
-    .omoss-wrapper .omoss-frist-container .right-content {
-        width: 90%;
-    }
-    .omoss-wrapper .omoss-frist-container .left-content h2 {
-        width: 90%;
+    /* skolan page */
+    .skolan-wrapper .skolan-frist-container .frist-content p,
+    .skolan-wrapper .skolan-third-container .frist-content p {
+        font-size: 0.7rem;
         text-align: center;
-        color: aliceblue;
-        font-size: 1rem;
-        font-family: lekton;
-        font-weight: bolder;
     }
-    .omoss-wrapper .omoss-frist-container .left-content p {
-        width: 90%;
-        text-align: center;
-        color: aliceblue
-    }
-    .omoss-wrapper .omoss-frist-container .right-content .right-div h3 {
-        background-color: transparent;
-        margin-bottom: 10px;
-    }
-    .omoss-wrapper .omoss-second-container {
-        flex-direction: column;
-    }
-    .omoss-wrapper .omoss-second-container .omoss-content {
-        gap: 40px;
-    }
-    .omoss-wrapper .omoss-second-container .omoss-content .bottom-section {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div {
-        width: 80%
-    }
-    .omoss-wrapper .line {
-        display: none;
-    }
-    .omoss-wrapper .omoss-frist-container .right-content .right-div .foto img {
-        width: 90%;
-        height: 90%;
-    }
-    /* end of om oss */
+    /* end of skolan page */
     /* koanmal page */
     .koanmal-wrapper .koanmal-frist-container {
         width: 100%;
@@ -1127,12 +1194,94 @@ nav .logo img {
         height: auto;
     }
     /* end of ko anmal page */
-    /* ledig jobb page */
+    /* jobba med oss page */
     .jobbmedoss-wrapper .jombbmedoss-frist-container .frist-content p {
         font-family: lekton;
         width: 80%;
     }
-    /* end of ledig jobb page */
+    .bloggar-wrapper .bloggar-second-container .bloggar-sections h4 {
+        padding: 10px 30px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+    }
+    /* eleve bloggar page */
+    .bloggar-wrapper .bloggar-second-container .bloggar-sections .foto-section {
+        flex-direction: column;
+        gap: 15px;
+        padding: 5px;
+    }
+    .bloggar-wrapper .bloggar-second-container .bloggar-sections .foto-section img {
+        width: 70%
+    }
+    /* eleve bloggar page */
+    /* end of jobba med oss page */
+    /* om oss page */
+    .omoss-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .omoss-wrapper .omoss-frist-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F87B35;
+        width: 85%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 100px 0px;
+        margin-bottom: 100px;
+    }
+    .omoss-wrapper .omoss-frist-container .left-content {
+        width: 90%;
+        align-items: center;
+        gap: 10px;
+    }
+    .omoss-wrapper .omoss-frist-container .left-content h2:nth-of-type(2) {
+        margin-top: 20px;
+    }
+    .omoss-wrapper .omoss-frist-container .right-content {
+        width: 90%;
+    }
+    .omoss-wrapper .omoss-frist-container .left-content h2 {
+        width: 90%;
+        text-align: center;
+        color: aliceblue;
+        font-size: 1rem;
+        font-family: lekton;
+        font-weight: bolder;
+    }
+    .omoss-wrapper .omoss-frist-container .left-content p {
+        width: 90%;
+        text-align: center;
+        color: aliceblue
+    }
+    .omoss-wrapper .omoss-frist-container .right-content .right-div h3 {
+        background-color: transparent;
+        margin-bottom: 10px;
+    }
+    .omoss-wrapper .omoss-second-container {
+        flex-direction: column;
+    }
+    .omoss-wrapper .omoss-second-container .omoss-content {
+        gap: 40px;
+    }
+    .omoss-wrapper .omoss-second-container .omoss-content .bottom-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .omoss-wrapper .omoss-second-container .omoss-content .bottom-section .bottom-div {
+        width: 80%
+    }
+    .omoss-wrapper .line {
+        display: none;
+    }
+    .omoss-wrapper .omoss-frist-container .right-content .right-div .foto img {
+        width: 90%;
+        height: 90%;
+    }
+    /* end of om oss */
     /* footer */
     .footer-nav {
         height: 400px;
