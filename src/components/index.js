@@ -9,6 +9,7 @@ import Navbar from "./Navbar";
 import Omoss from "./Omoss";
 import Skolan from "./Skolan";
 import { BrowserRouter as Main, Route, Routes } from "react-router-dom";
+import ClickBloggarBlid from "./ClickBloggarBlid";
 function components(props) {
   return (
     <Main>
@@ -22,6 +23,7 @@ function components(props) {
         <Route exact path="/Jobbarmedoss" element={<Jobbarmedoss />} />
         <Route exact path="/Omoss" element={<Omoss />} />
         <Route exact path="/Kontakt" element={<Kontakt />} />
+        <Route exact path="/ClickBloggarBlid" element={<ClickBloggarBlid />} />
       </Routes>
 
       <Footer />

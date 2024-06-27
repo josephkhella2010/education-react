@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/tuffy');
 @import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -696,11 +697,190 @@ nav .logo img {
     height: 150px;
 }
 
+.bloggar-wrapper .bloggar-second-container .bloggar-sections .foto-section img:hover {
+    cursor: pointer;
+}
+
 
 /* end of bloggar page */
 
 
-/* jobba med oss */
+/* click bloggar-page */
+
+.clickbloggar-wrapper {
+    min-height: 100dvh;
+    width: 100%;
+    padding: 70px 0px;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container {
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container .line {
+    width: 99px;
+    height: 70px;
+    background-color: #F87B35;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container .frist-content {
+    display: flex;
+    border: 8px solid #F87B35;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container .frist-content .left-section {
+    width: 40%;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container .frist-content .left-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section {
+    width: 60%;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section .top-content {
+    border: 2px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 55%;
+    min-height: 50px;
+    padding: 7px;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section .top-content p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section .top-content img {
+    height: 50px;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section .middle-content {
+    border: 2px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    min-height: 50px;
+    padding: 15px;
+    font-family: "Alegreya SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section .blue-line {
+    width: 80%;
+    height: 10px;
+    background-color: #3C4870;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section .bottom-content {
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section .bottom-content img {
+    height: 50px;
+}
+
+.clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section .bottom-content p {
+    border: 2px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 82%;
+    min-height: 50px;
+    padding: 15px;
+    font-family: "Alegreya SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.clickbloggar-wrapper .clickbloggar-second-container {
+    padding: 100px 0px;
+}
+
+.clickbloggar-wrapper .clickbloggar-second-container .frist-content {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.clickbloggar-wrapper .clickbloggar-second-container .frist-content .frist-section {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: lekton;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.clickbloggar-wrapper .clickbloggar-second-container .frist-content .frist-section .foto-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clickbloggar-wrapper .clickbloggar-second-container .frist-content .frist-section .foto-section img {
+    width: 23%;
+    height: 180px;
+}
+
+.clickbloggar-wrapper .clickbloggar-second-container .frist-content .blue-line {
+    background-color: #3C4870;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* end of click bloggar page */
+
+
+/* jobba med oss  */
 
 
 /* end of jobba med oss */
@@ -1211,9 +1391,71 @@ nav .logo img {
         padding: 5px;
     }
     .bloggar-wrapper .bloggar-second-container .bloggar-sections .foto-section img {
-        width: 70%
+        width: 70%;
     }
     /* eleve bloggar page */
+    /* clickbloggar page */
+    .clickbloggar-wrapper {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .clickbloggar-wrapper .clickbloggar-frist-container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .clickbloggar-wrapper .clickbloggar-frist-container .line {
+        Width: 57px;
+        Height: 229px;
+    }
+    .clickbloggar-wrapper .clickbloggar-frist-container .frist-content {
+        flex-direction: column;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .clickbloggar-wrapper .clickbloggar-frist-container .frist-content .left-section {
+        width: 100%;
+    }
+    .clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section {
+        width: 100%;
+        gap: 20px
+    }
+    .clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section .top-content {
+        width: 70%;
+    }
+    .clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section .middle-content {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+    .clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section .middle-content {
+        width: 90%;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    .clickbloggar-wrapper .clickbloggar-frist-container .frist-content .right-section .blue-line {
+        width: 95%;
+    }
+    .clickbloggar-wrapper .clickbloggar-second-container {
+        width: 100%;
+    }
+    .clickbloggar-wrapper .clickbloggar-second-container .frist-content .frist-section {
+        gap: 100px
+    }
+    .clickbloggar-wrapper .clickbloggar-second-container .frist-content .frist-section .foto-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .clickbloggar-wrapper .clickbloggar-second-container .frist-content .frist-section .foto-section img {
+        width: 70%;
+    }
+    .clickbloggar-wrapper .clickbloggar-second-container .frist-content .blue-line {
+        top: 7%;
+        z-index: 20;
+        height: 40px;
+    }
+    /* end of clickbloggar page */
     /* end of jobba med oss page */
     /* om oss page */
     .omoss-wrapper {

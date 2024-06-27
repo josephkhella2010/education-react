@@ -45,13 +45,21 @@ export default function BloggarImg() {
   ];
   return (
     <>
-      {arr.map((item) => {
+      {arr.map((item, index) => {
         return (
-          <div className="bloggar-sections">
+          <div className="bloggar-sections" key={index}>
             <h4>{item.text}</h4>
             <div className="foto-section">
-              {item.imgs.map((foto) => {
-                return <img src={foto}></img>;
+              {item.imgs.map((foto, index) => {
+                return (
+                  <img
+                    key={index}
+                    src={foto}
+                    onClick={() => {
+                      window.location.href = "./ClickBloggarBlid";
+                    }}
+                  ></img>
+                );
               })}
             </div>
           </div>
