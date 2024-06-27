@@ -1133,6 +1133,163 @@ nav .logo img {
 /* end of om oss page */
 
 
+/* kontakt page */
+
+.kontakt-wrapper {
+    min-height: 100dvh;
+}
+
+.kontakt-wrapper .frist-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px;
+}
+
+.kontakt-wrapper .frist-content .right-content {
+    width: 75%;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.kontakt-wrapper .frist-content .right-content .frist-section {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.kontakt-wrapper .frist-content .right-content .frist-section img {
+    width: 85px;
+    height: 85px;
+}
+
+.kontakt-wrapper .frist-content .right-content .second-section {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.kontakt-wrapper .frist-content .right-content .second-section .location-section,
+.kontakt-wrapper .frist-content .right-content .second-section .telefon-section {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.kontakt-wrapper .frist-content .right-content .second-section .telefon-section a {
+    text-decoration: none;
+    color: black
+}
+
+.kontakt-wrapper .frist-content .right-content .second-section .location-section img,
+.kontakt-wrapper .frist-content .right-content .second-section .telefon-section img {
+    width: 85px;
+    height: 85px;
+}
+
+.kontakt-wrapper .frist-content .left-content {
+    width: 30%;
+    padding-top: 100px;
+}
+
+.kontakt-wrapper .frist-content .left-content .login-section {
+    background-color: #F87B35;
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kontakt-wrapper .frist-content .left-content .login-section h3 {
+    font-family: lekton;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.kontakt-wrapper .frist-content .left-content .login-section button {
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-family: lekton;
+    text-align: center;
+    font-weight: 900;
+}
+
+.kontakt-wrapper .frist-content .right-content .third-section,
+.kontakt-wrapper .frist-content .right-content .fourth-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.kontakt-wrapper .frist-content .right-content .third-section .frist-content,
+.kontakt-wrapper .frist-content .right-content .fourth-section .frist-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    min-height: 250px;
+    font-family: "Inter", sans-serif;
+}
+
+.kontakt-wrapper .frist-content .right-content .third-section .frist-content p,
+.kontakt-wrapper .frist-content .right-content .fourth-section .frist-content p {
+    font-family: "Inter", sans-serif;
+}
+
+.kontakt-wrapper .frist-content .right-content .third-section .frist-content a,
+.kontakt-wrapper .frist-content .right-content .fourth-section .frist-content a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    word-wrap: normal;
+    color: black;
+    width: 80%;
+    word-wrap: break-word;
+}
+
+.kontakt-wrapper .frist-content .right-content .third-section .frist-content img,
+.kontakt-wrapper .frist-content .right-content .fourth-section .frist-content img {
+    width: 100px;
+    height: 100px;
+}
+
+.kontakt-wrapper .frist-content .right-content .line {
+    background-color: rgb(2, 2, 2);
+    width: 80%;
+    height: 3px;
+}
+
+
+/* end of kontakt page */
+
+
 /* footer */
 
 .footer-nav {
@@ -1524,6 +1681,56 @@ nav .logo img {
         height: 90%;
     }
     /* end of om oss */
+    /* kontakt page */
+    .kontakt-wrapper .frist-content {
+        flex-direction: column-reverse;
+    }
+    .kontakt-wrapper .frist-content {
+        padding: 0px 0px;
+    }
+    .kontakt-wrapper .frist-content .left-content {
+        background-color: rgb(166, 163, 166);
+        width: 100%;
+        padding: 0px;
+    }
+    .kontakt-wrapper .frist-content .left-content .login-section button {
+        width: 50%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-family: lekton;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+    .kontakt-wrapper .frist-content .right-content {
+        width: 100%;
+    }
+    .frist-content .right-content .second-section .telefon-section img {
+        width: 60%;
+        height: 85px;
+    }
+    .kontakt-wrapper .frist-content .right-content .second-section {
+        justify-content: space-around;
+    }
+    .kontakt-wrapper .frist-content .right-content .third-section,
+    .kontakt-wrapper .frist-content .right-content .fourth-section {
+        flex-direction: column;
+        gap: 30px
+    }
+    .kontakt-wrapper .frist-content .right-content .third-section .frist-content,
+    .kontakt-wrapper .frist-content .right-content .fourth-section .frist-content {
+        gap: 10px;
+        padding: 10px;
+        width: 80%;
+        text-align: center;
+        min-height: 250px;
+    }
+    .kontakt-wrapper .frist-content .right-content .line {
+        width: 112%;
+    }
+    /* end of kontakt page */
     /* footer */
     .footer-nav {
         height: 400px;
