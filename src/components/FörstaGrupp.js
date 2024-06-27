@@ -10,8 +10,8 @@ export default function FörstaGrupp(props) {
             <img src={item.url}></img>
             <p>{item.jobTitle}</p>
             <p>{item.name}</p>
-            <a href={item.email}>{item.email}</a>
-            <p>{item.tele}</p>
+            <a href={`mailto:${item.email}`}>{item.email}</a>
+            <a href={`tel:${item.tele}`}>{item.tele}</a>
           </div>
         );
       })}

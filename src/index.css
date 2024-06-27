@@ -1273,6 +1273,11 @@ nav .logo img {
     word-wrap: break-word;
 }
 
+.kontakt-wrapper .frist-content .right-content .third-section .frist-content a:nth-of-type(2),
+.kontakt-wrapper .frist-content .right-content .fourth-section .frist-content a:nth-of-type(2) {
+    text-decoration: none;
+}
+
 .kontakt-wrapper .frist-content .right-content .third-section .frist-content img,
 .kontakt-wrapper .frist-content .right-content .fourth-section .frist-content img {
     width: 100px;
