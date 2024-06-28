@@ -65,7 +65,9 @@ export default function Home() {
         <div className="left-section">
           <h3>En tryggare </h3>
           <h3>utbildning för</h3>
-          <h3>dina barn</h3>
+          <h3>
+            dina <span> barn</span>
+          </h3>
         </div>
         <div className="right-section">
           <img src="./foto/home-frist.png"></img>
