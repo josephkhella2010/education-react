@@ -10,11 +10,14 @@ import Omoss from "./Omoss";
 import Skolan from "./Skolan";
 import { BrowserRouter as Main, Route, Routes } from "react-router-dom";
 import ClickBloggarBlid from "./ClickBloggarBlid";
+import Loggin from "./Loggin";
+import LarareLoggin from "./LarareLoggin";
+import StudentLoggin from "./StudentLoggin";
+import GlomFigur from "./GlomFigur";
 function components(props) {
   return (
     <Main>
       <Navbar></Navbar>
-
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Koanmal" element={<Koanmal />} />
@@ -24,6 +27,10 @@ function components(props) {
         <Route exact path="/Omoss" element={<Omoss />} />
         <Route exact path="/Kontakt" element={<Kontakt />} />
         <Route exact path="/ClickBloggarBlid" element={<ClickBloggarBlid />} />
+        <Route exact path="/Loggin" element={<Loggin />} />
+        <Route exact path="/LarareLoggin" element={<LarareLoggin />} />
+        <Route exact path="/StudentLoggin" element={<StudentLoggin />} />
+        <Route exact path="/GlomFigur" element={<GlomFigur />} />
       </Routes>
 
       <Footer />

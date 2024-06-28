@@ -113,7 +113,13 @@ export default function Kontakt() {
         <div className="left-content">
           <div className="login-section">
             <h3>log in</h3>
-            <button>Campus login</button>
+            <button
+              onClick={() => {
+                window.location.href = "./Loggin";
+              }}
+            >
+              Campus login
+            </button>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200..900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -1328,6 +1329,218 @@ nav .logo img {
 /* end of kontakt page */
 
 
+/* loggin */
+
+.loggin-wrapper {
+    width: 100%;
+    min-height: 100dvh;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loggin-wrapper .loggin-content {
+    padding: 10px;
+    width: 45%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: #1B5743;
+}
+
+.loggin-wrapper .loggin-content img {
+    width: 200px;
+    height: 70px;
+}
+
+.loggin-wrapper .loggin-content p {
+    width: 25%;
+    text-align: center;
+    font-family: lekton;
+    font-size: 1.3rem;
+    color: aliceblue
+}
+
+.loggin-wrapper .loggin-content .button-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.loggin-wrapper .loggin-content .button-container button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: #F87B35;
+    background-color: rgb(252, 252, 252);
+    font-weight: 700;
+    font-family: lekton;
+    text-transform: capitalize;
+}
+
+
+/* end of login page */
+
+
+/* larare logg in page , and student logg in page */
+
+.larareloggin-wrapper,
+.studentloggin-wrapper {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.larareloggin-wrapper .larareloggin-container,
+.studentloggin-wrapper .studentloggin-container {
+    padding: 10px;
+    min-width: 45%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: #1B5743;
+}
+
+.larareloggin-wrapper .larareloggin-container img,
+.studentloggin-wrapper .studentloggin-container img {
+    width: 70%;
+    height: 70px;
+}
+
+.larareloggin-wrapper .larareloggin-container input,
+.studentloggin-wrapper .studentloggin-container input {
+    width: 70%;
+    height: 150px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    font-size: 2rem;
+    font-family: "Mada", sans-serif;
+}
+
+.larareloggin-wrapper .larareloggin-container h3,
+.studentloggin-wrapper .studentloggin-container h3 {
+    color: #F87B35;
+    font-family: "Mada", sans-serif;
+}
+
+.larareloggin-wrapper .larareloggin-container p:nth-of-type(1),
+.studentloggin-wrapper .studentloggin-container p:nth-of-type(1) {
+    color: #F87B35;
+    width: 70%;
+    cursor: pointer;
+    font-family: "Mada", sans-serif;
+    font-weight: 600;
+}
+
+.larareloggin-wrapper .larareloggin-container p:nth-of-type(2),
+.studentloggin-wrapper .studentloggin-container p:nth-of-type(2) {
+    color: #F87B35;
+    width: 100%;
+    text-align: right;
+    height: 30px;
+    padding-right: 10px;
+    font-family: "Mada", sans-serif;
+    font-weight: 600;
+}
+
+
+/* end of larare logg in page , and student logg in page*/
+
+
+/* glom figur page */
+
+.glomfigur-wrapper {
+    min-height: 100dvh;
+    width: 100%;
+}
+
+.glomfigur-wrapper {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glomfigur-wrapper .glomfigur-container {
+    padding: 10px;
+    min-width: 55%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: #1B5743;
+}
+
+.glomfigur-wrapper .glomfigur-container img {
+    width: 70%;
+    height: 70px;
+}
+
+.glomfigur-wrapper .glomfigur-container .button-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.glomfigur-wrapper .glomfigur-container .button-container button {
+    width: 70%;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-family: "Mada", sans-serif;
+    font-weight: 600;
+}
+
+
+/* end of figur page */
+
+
 /* footer */
 
 .footer-nav {
@@ -1764,10 +1977,10 @@ nav .logo img {
     .kontakt-wrapper .frist-content .left-content .login-section button {
         width: 50%;
         border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
+        -webkit-border-radius: ;
+        -moz-border-radius: ;
+        -ms-border-radius: ;
+        -o-border-radius: ;
         font-family: lekton;
         font-weight: bolder;
         letter-spacing: 1px;
@@ -1799,6 +2012,47 @@ nav .logo img {
         width: 112%;
     }
     /* end of kontakt page */
+    /* logg in page */
+    .loggin-wrapper .loggin-content {
+        width: 80%;
+        min-height: 400px;
+        gap: 30px
+    }
+    .loggin-wrapper .loggin-content p {
+        width: 70%;
+    }
+    .loggin-wrapper .loggin-content .button-container {
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px
+    }
+    .loggin-wrapper .loggin-content .button-container button {
+        width: 200px;
+    }
+    /* end of logg in page */
+    /* larare logg in page, and student logg in page */
+    .larareloggin-wrapper .larareloggin-container,
+    .studentloggin-wrapper .studentloggin-container {
+        width: 90%;
+    }
+    /* end of larare logg in page, and student logg in page */
+    /* glom figur page */
+    .glomfigur-wrapper .glomfigur-container {
+        padding: 10px;
+        width: 90%;
+    }
+    .glomfigur-wrapper .glomfigur-container .button-container button {
+        padding: 10px;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .glomfigur-wrapper .glomfigur-container .button-container {
+        padding: 10px;
+        width: 80%;
+    }
+    /* end of  glom figur page */
     /* footer */
     .footer-nav {
         height: 400px;
