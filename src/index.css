@@ -1207,7 +1207,7 @@ nav .logo img {
 .kontakt-wrapper .frist-content .right-content .second-section {
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 10px;
     width: 100%;
