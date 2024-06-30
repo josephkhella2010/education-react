@@ -14,6 +14,9 @@ import Loggin from "./Loggin";
 import LarareLoggin from "./LarareLoggin";
 import StudentLoggin from "./StudentLoggin";
 import GlomFigur from "./GlomFigur";
+import LogginAnvandnamn from "./LogginAnvandnamn";
+import GlomLosenord from "./GlomLosenord";
+import FaceId from "./FaceId";
 function components(props) {
   return (
     <Main>
@@ -31,6 +34,9 @@ function components(props) {
         <Route exact path="/LarareLoggin" element={<LarareLoggin />} />
         <Route exact path="/StudentLoggin" element={<StudentLoggin />} />
         <Route exact path="/GlomFigur" element={<GlomFigur />} />
+        <Route exact path="/LogginAnvandnamn" element={<LogginAnvandnamn />} />
+        <Route exact path="/GlomLosenord" element={<GlomLosenord />} />
+        <Route exact path="/FaceId" element={<FaceId />} />
       </Routes>
 
       <Footer />

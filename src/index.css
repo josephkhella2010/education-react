@@ -917,9 +917,6 @@ nav .logo img {
 
 /* jobba med oss  */
 
-
-/* end of jobba med oss */
-
 .jobbmedoss-wrapper {
     width: 100%;
     min-height: 100dvh;
@@ -1475,22 +1472,20 @@ nav .logo img {
 /* end of larare logg in page , and student logg in page*/
 
 
-/* glom figur page */
+/* glom figur page och glom losenord page */
 
-.glomfigur-wrapper {
-    min-height: 100dvh;
-    width: 100%;
-}
-
-.glomfigur-wrapper {
+.glomfigur-wrapper,
+.Glomlosenord-wrapper {
     width: 100%;
     min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 100px 0px;
 }
 
-.glomfigur-wrapper .glomfigur-container {
+.glomfigur-wrapper .glomfigur-container,
+.Glomlosenord-wrapper .Glomlosenord-container {
     padding: 10px;
     min-width: 55%;
     min-height: 400px;
@@ -1505,9 +1500,11 @@ nav .logo img {
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
     background-color: #1B5743;
+    padding-bottom: 40px;
 }
 
-.glomfigur-wrapper .glomfigur-container img {
+.glomfigur-wrapper .glomfigur-container img,
+.Glomlosenord-wrapper .Glomlosenord-container img {
     width: 70%;
     height: 70px;
 }
@@ -1535,10 +1532,369 @@ nav .logo img {
     -o-border-radius: 20px;
     font-family: "Mada", sans-serif;
     font-weight: 600;
+    cursor: pointer;
 }
 
 
-/* end of figur page */
+/*  input */
+
+.Glomlosenord-wrapper .Glomlosenord-container .input-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
+    gap: 30px;
+}
+
+.Glomlosenord-wrapper .Glomlosenord-container .input-container .input-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.Glomlosenord-wrapper .Glomlosenord-container .input-container .input-section input {
+    width: 75%;
+    height: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 20px;
+    text-transform: capitalize;
+    outline: transparent;
+    border: 3px solid black;
+}
+
+.Glomlosenord-wrapper .Glomlosenord-container .input-container .input-section:nth-child(2) input {
+    height: 150px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    padding: 20px;
+    text-transform: capitalize;
+    outline: transparent;
+    border: 3px solid black;
+    width: 100%;
+}
+
+.Glomlosenord-wrapper .Glomlosenord-container .input-container .input-section p {
+    color: #F87B35;
+    font-family: "Mada", sans-serif;
+    font-weight: 400;
+}
+
+.Glomlosenord-wrapper .Glomlosenord-container .input-container p:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F87B35;
+    font-weight: 530;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.Glomlosenord-wrapper .Glomlosenord-container button {
+    width: 170px;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: #F87B35;
+    color: black;
+    font-weight: bolder;
+    font-family: lekton;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+
+/* end of glom figur page  och och glom losenord page*/
+
+
+/* logg in med namn */
+
+.logginmednamn-wrapper {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logginmednamn-wrapper .logginmednamn-container {
+    padding: 10px;
+    min-width: 55%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+    background-color: #1B5743;
+}
+
+.logginmednamn-wrapper .logginmednamn-container img {
+    width: 70%;
+    height: 70px;
+}
+
+.logginmednamn-wrapper .logginmednamn-container .input-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
+    gap: 30px;
+}
+
+.logginmednamn-wrapper .logginmednamn-container .input-container .input-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.logginmednamn-wrapper .logginmednamn-container .input-container .input-section input {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+    padding: 20px;
+    text-transform: capitalize;
+    outline: transparent;
+    border: 3px solid black;
+}
+
+.logginmednamn-wrapper .logginmednamn-container .input-container .input-section p {
+    color: aliceblue;
+    font-family: "Mada", sans-serif;
+    font-weight: 400;
+}
+
+.logginmednamn-wrapper .logginmednamn-container .input-container p {
+    color: #F87B35;
+    cursor: pointer;
+}
+
+.logginmednamn-wrapper .logginmednamn-container button {
+    width: 170px;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+    background-color: #F87B35;
+    color: black;
+    font-weight: 700;
+    font-family: lekton;
+    text-transform: capitalize;
+}
+
+
+/* end of logg namn */
+
+
+/*face-id page  */
+
+.faceid-wrapper {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faceid-wrapper .faceid-container {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+    background-color: #1B5743;
+    padding: 0px;
+}
+
+.faceid-wrapper .faceid-container .left-content {
+    min-height: 90%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.faceid-wrapper .faceid-container .left-content .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faceid-wrapper .faceid-container .left-content img {
+    width: 50%;
+    height: 70px;
+}
+
+.faceid-wrapper .faceid-container .left-content .button-container {
+    background-color: rgb(255, 255, 255);
+    min-height: 300px;
+    width: 80%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 10px;
+}
+
+.faceid-wrapper .faceid-container .left-content .button-container a {
+    width: 80%;
+    padding: 8px;
+    border-radius: 10px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    min-height: 50px;
+    cursor: pointer;
+}
+
+.faceid-wrapper .faceid-container .left-content .button-container a:nth-of-type(1) {
+    background-color: rgb(4, 110, 231);
+    color: aliceblue;
+}
+
+.faceid-wrapper .faceid-container .left-content .button-container a:nth-of-type(2) {
+    background-color: coral;
+    color: aliceblue;
+}
+
+.faceid-wrapper .faceid-container .left-content .button-container a:nth-of-type(3) {
+    background-color: rgb(17, 80, 206);
+    color: aliceblue;
+}
+
+.faceid-wrapper .faceid-container .left-content .button-container a:nth-of-type(4) {
+    background-color: rgb(0, 51, 160);
+    color: aliceblue;
+}
+
+.faceid-wrapper .faceid-container .left-content .button-container a:nth-of-type(5) {
+    color: rgb(0, 51, 160);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.faceid-wrapper .faceid-container .left-content .button-container a:nth-of-type(5) span {
+    color: rgb(0, 51, 160);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faceid-wrapper .faceid-container .left-content .button-container a span {
+    width: 85%;
+    text-align: center;
+}
+
+.icon-frist {
+    background-color: aliceblue;
+    padding: 1px;
+    height: 20px;
+    width: 20px;
+}
+
+.icon {
+    color: aliceblue;
+    width: 20px
+}
+
+.faceid-wrapper .faceid-container .right-content {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.faceid-wrapper .faceid-container .right-content img {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faceid-wrapper .faceid-container .middle-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 8%;
+    justify-content: space-between;
+}
+
+.faceid-wrapper .faceid-container .middle-content p {
+    color: aliceblue;
+    font-family: "Mada", sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.faceid-wrapper .faceid-container .middle-content .line {
+    width: 3px;
+    height: 46%;
+    background-color: black;
+}
+
+
+/*  end of face-id page*/
 
 
 /* footer */
@@ -1595,23 +1951,6 @@ nav .logo img {
     justify-content: center;
     gap: 15px;
 }
-
-
-/*  
-    
-    @media(min-width:700px) and (max-width:1200px) {
-        .home-wrapper .home-fourth-container .home-fourth-content .home-bottom-section {
-            height: 700px;
-        }
-        .home-wrapper .home-fourth-container .home-fourth-content .home-bottom-section .text-div {
-            background-color: rgb(225, 255, 0);
-            height: 70%;
-        }
-        .home-wrapper .home-fourth-container .home-fourth-content .home-bottom-section .home-bottom-foto {
-            height: 30%;
-        }
-    }
-    */
 
 @media(max-width:790px) {
     .nav {
@@ -2038,10 +2377,12 @@ nav .logo img {
         width: 90%;
     }
     /* end of larare logg in page, and student logg in page */
-    /* glom figur page */
-    .glomfigur-wrapper .glomfigur-container {
+    /* glom figur page och glom losenord page */
+    .glomfigur-wrapper .glomfigur-container,
+    .Glomlosenord-wrapper .Glomlosenord-container {
         padding: 10px;
         width: 90%;
+        padding-bottom: 50px;
     }
     .glomfigur-wrapper .glomfigur-container .button-container button {
         padding: 10px;
@@ -2052,7 +2393,70 @@ nav .logo img {
         padding: 10px;
         width: 80%;
     }
-    /* end of  glom figur page */
+    .Glomlosenord-wrapper .Glomlosenord-container .input-container {
+        width: 75%;
+    }
+    .Glomlosenord-wrapper .Glomlosenord-container .input-container .input-section input {
+        width: 85%;
+    }
+    .Glomlosenord-wrapper .Glomlosenord-container .input-container .input-section:nth-child(2) input {
+        height: 100px;
+    }
+    /* end of  glom figur page och glom losenord page */
+    /* logg in med namn page */
+    .logginmednamn-wrapper .logginmednamn-container {
+        padding: 10px;
+        width: 90%;
+    }
+    .logginmednamn-wrapper .logginmednamn-container .input-container {
+        width: 75%;
+    }
+    .logginmednamn-wrapper .logginmednamn-container .input-container .input-section {
+        gap: 10px;
+    }
+    /*  end of logg in med namn page */
+    /* faceid  page */
+    .faceid-wrapper .faceid-container {
+        width: 95%;
+        height: auto;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0px 0px;
+    }
+    .faceid-wrapper {
+        padding: 100px 20px;
+    }
+    .faceid-wrapper .faceid-container .middle-content {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .faceid-wrapper .faceid-container .middle-content .line {
+        width: 32%;
+        height: 5px;
+        background-color: rgb(5, 5, 5);
+    }
+    .faceid-wrapper .faceid-container .left-content {
+        width: 85%;
+        padding: 25px 5px;
+    }
+    .faceid-wrapper .faceid-container .left-content .button-container {
+        width: 100%;
+    }
+    .faceid-wrapper .faceid-container .left-content img {
+        width: 70%;
+    }
+    .faceid-wrapper .faceid-container .right-content {
+        width: 80%;
+    }
+    .faceid-wrapper .faceid-container .middle-content p {
+        color: aliceblue;
+        padding: 5px;
+    }
+    /*  end of faceid  page */
     /* footer */
     .footer-nav {
         height: 400px;
