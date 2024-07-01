@@ -1,5 +1,4 @@
 import React from "react";
-import OmossMobile from "./OmossMobile";
 
 export default function Omoss() {
   let arr = [
