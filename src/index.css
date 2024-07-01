@@ -9,6 +9,147 @@
     box-sizing: border-box;
 }
 
+
+/* 
+nav {
+    width: 100%;
+    height: 100px !important;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.nav {
+    width: 100%;
+    height: 100% !important;
+    display: flex;
+    align-items: center !important;
+    justify-content: space-between !important;
+    color: white;
+    background-color: #1B5743;
+    flex-wrap: nowrap !important;
+    padding: 0px 20px !important;
+}
+
+.nav ul {
+    display: flex;
+    height: 100%;
+    width: 70%;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px !important;
+}
+
+.nav ul li {
+    list-style: none;
+    text-align: center;
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav .hambar {
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+}
+
+nav .hambar .line {
+    width: 80%;
+    height: 3px;
+    background-color: #F87B35;
+    transition: 0.5s ease-in-out;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+
+nav .hambar .line:nth-child(1).active {
+    transform: translateY(13px) rotate(45deg);
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -moz-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transition: 0.5s ease-in-out;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+
+nav .hambar .line:nth-child(2).active {
+    background-color: transparent;
+}
+
+nav .hambar .line:nth-child(3).active {
+    transform: translateY(-13px) rotate(-45deg);
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -moz-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transition: 0.5s ease-in-out;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+
+nav .logo {
+    width: 25%;
+    height: 100px;
+    background-color: #1B5743;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    padding: 10px 10px 10px 20px;
+}
+
+nav .logo img {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+}
+
+ */
+
 nav {
     width: 100%;
     height: 100px;
@@ -19,30 +160,29 @@ nav {
 
 .nav {
     width: 100%;
-    height: 100px !important;
+    height: 100px;
     display: flex;
-    align-items: center !important;
-    justify-content: space-between !important;
+    align-items: center;
+    padding: 10px 20px !important;
+    justify-content: space-between;
     color: white;
     background-color: #1B5743;
     flex-wrap: nowrap !important;
-    padding: 0 !important;
 }
 
-.nav ul {
+nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 150px !important;
-    width: 75%;
+    height: 100px;
+    width: 100%;
     gap: 2px;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
-    background-color: #b0bbdf;
-    padding: 0px !important;
+    margin-bottom: 0px !important;
 }
 
-.nav ul li {
+nav ul li {
     list-style: none;
     text-align: center;
     height: 50px;
@@ -86,18 +226,18 @@ nav .hambar .line {
     height: 3px;
     background-color: #F87B35;
     transition: 0.5s ease-in-out;
-    -webkit-transition: ;
-    -moz-transition: ;
-    -ms-transition: ;
-    -o-transition: ;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
 }
 
 nav .hambar .line:nth-child(1).active {
     transform: translateY(13px) rotate(45deg);
-    -webkit-transform: ;
-    -moz-transform: ;
-    -ms-transform: ;
-    -o-transform: ;
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -moz-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
     transition: 0.5s ease-in-out;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
@@ -116,30 +256,20 @@ nav .hambar .line:nth-child(3).active {
     -ms-transform: translateY(-13px) rotate(-45deg);
     -o-transform: translateY(-13px) rotate(-45deg);
     transition: 0.5s ease-in-out;
-    -webkit-transition: ;
-    -moz-transition: ;
-    -ms-transition: ;
-    -o-transition: ;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
 }
 
 nav .logo {
-    width: 25%;
-    height: 100px;
-    background-color: #1B5743;
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-    text-align: center;
-    padding: 10px 10px 10px 20px;
+    width: 20%;
+    height: 70%;
 }
 
 nav .logo img {
     width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
-    text-align: center;
+    height: 100%;
 }
 
 
@@ -1922,8 +2052,7 @@ nav .logo img {
 
 .footer-nav {
     width: 100%;
-    /*     height: 250px;
- */
+    min-height: 300px;
     display: flex;
     align-items: center;
     padding: 10px 20px;
